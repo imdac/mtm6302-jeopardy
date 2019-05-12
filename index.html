@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jeopardy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="score" class="score"></div>
+
+  <div id="board" class="board">
+    <div class="category">
+      <div class="title">SCI-FI STUFF</div>
+      <div class="value">200</div>
+      <div class="value">200</div>
+      <div class="value">200</div>
+    </div>
+    <div class="category">
+      <div class="title">NOBODY EXPECTS</div>
+      <div class="value">200</div>
+      <div class="value">200</div>
+      <div class="value">200</div>
+    </div>
+    <div class="category">
+      <div class="title">CLASSIC LITERATURE</div>
+      <div class="value">200</div>
+      <div class="value">200</div>
+      <div class="value">200</div>
+    </div>
+  </div>
+
+
+
+  <div id="overlay" class="overlay">
+    <div class="clue">The latex prosthetic ears worn by this "Star Trek" actor in the late '60s even have some
+      residual makeup left on them</div>
+
+    <div id="responses" class="responses">
+      <button id="showQuestion" class="button">Patrick Stewart</button>
+      <button id="showQuestion" class="button">Leonard Nimoy</button>
+      <button id="showQuestion" class="button">William Shatner</button>
+
+      <button id="pass" class="button pass">Pass</button>
+    </div>
+  </div>
+
+  <script src="jeopardy.js"></script>
+</body>
+
+</html>
