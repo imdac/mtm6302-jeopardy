@@ -23,7 +23,7 @@ const categories = [
     title: 'TV Shows By Couple',
     clues: [
       {
-        text: `Monica & Chandler `,
+        text: `Monica & Chandler`,
         value: 200,
         answer: `What is Friends`
       },
