@@ -11,42 +11,36 @@
 </head>
 
 <body>
-  <div id="score" class="score"></div>
-
   <div id="board" class="board">
     <div class="category">
-      <div class="title">SCI-FI STUFF</div>
-      <div class="value">200</div>
-      <div class="value">200</div>
-      <div class="value">200</div>
+      <div class="title">Category Title</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
     </div>
     <div class="category">
-      <div class="title">NOBODY EXPECTS</div>
-      <div class="value">200</div>
-      <div class="value">200</div>
-      <div class="value">200</div>
+      <div class="title">Category Title</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
     </div>
     <div class="category">
-      <div class="title">CLASSIC LITERATURE</div>
-      <div class="value">200</div>
-      <div class="value">200</div>
-      <div class="value">200</div>
+      <div class="title">Category Title</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
+      <div class="cell" data-text="the clue text" data-answer="the clue answer">clue value</div>
     </div>
   </div>
 
 
-
   <div id="overlay" class="overlay">
-    <div class="clue">The latex prosthetic ears worn by this "Star Trek" actor in the late '60s even have some
-      residual makeup left on them</div>
+    <div id="clue" class="clue"></div>
 
-    <div id="responses" class="responses">
-      <button id="showQuestion" class="button">Patrick Stewart</button>
-      <button id="showQuestion" class="button">Leonard Nimoy</button>
-      <button id="showQuestion" class="button">William Shatner</button>
-
-      <button id="pass" class="button pass">Pass</button>
+    <div class="responses">
+      <div id="answer" class="answer"></div>
+      <button id="close" class="button close">Show Answer</button>
     </div>
+
   </div>
 
   <script src="jeopardy.js"></script>

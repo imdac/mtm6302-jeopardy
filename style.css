@@ -43,8 +43,7 @@ body {
   text-transform: uppercase;
 }
 
-
-.value {
+.cell {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -77,19 +76,15 @@ body {
   transition: transform 0.5s ease-in;
 }
 
-.show,
-.show .button {
-  opacity: 1;
-  transform: scale(1);
-  visibility: visible;
-}
+.responses {
+  display: grid;
+  justify-items: center;
+  align-items: center;
 
-.show .button {
-  transition: 0.5s 0.8s;
-}
+  align-self: stretch;
 
-.show .pass {
-  transition: 0.8s 1.8s;
+  padding: 15px;
+  background-color: #043377;
 }
 
 .clue {
@@ -104,17 +99,17 @@ body {
   text-transform: uppercase;
 }
 
-.responses {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  flex-wrap: wrap;
+.timer {
+  height: 10px;
 
-  align-self: stretch;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
 
-  padding: 15px;
-  background-color: #043377;
+  transform: translateY(-100px)
 }
+
+
 
 .button {
   margin: 10px;
@@ -136,14 +131,9 @@ body {
 
 }
 
-.pass {
-  /* position: fixed;
-  bottom: 45px;
-  right: 0;
-  left: 0; */
-
+.close {
   padding: 5px;
-  width: 80px;
+  width: 160px;
   height: 30px;
   margin: 0 auto;
 
@@ -162,7 +152,7 @@ body {
 
 }
 
-.pass::before {
+.close::before {
   content: "";
   position: absolute;
   right: -15px;
@@ -174,7 +164,7 @@ body {
   border-bottom: 15px solid transparent;
 }
 
-.pass::after {
+.close::after {
   content: "";
   position: absolute;
   left: -15px;
@@ -186,11 +176,28 @@ body {
   border-bottom: 15px solid transparent;
 }
 
-.question {
+.answer {
   color: #E0D71D;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: italic;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.5s;
 }
+
+.show,
+.show .button {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.show .close {
+  transition: 0.8s 1.8s;
+}
+
 
 @media (min-width: 480px) {
   .clue {
@@ -204,14 +211,4 @@ body {
   }
 }
 
-@media (min-width: 900px) {
-  .responses {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .pass {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
-  }
-}
+@media (min-width: 900px) {}
