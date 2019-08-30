@@ -10,7 +10,7 @@ For this exercise, you will demonstrate your knowledge of JavaScript by creating
 The following requirements must be met in order to complete the assignment successfully: 
 
 ### Step 1
-Download the [Jeopardy starter files](https://github.com/imdac/mtm6302-jeopardy/archive/master.zip). Inside the starter files will be `index.html`, `style.css` and `jeopardy.js`. **All the changes will be made to the `jeopardy.js` file.**
+Clone this repository from GitHub. Inside the starter files will be `index.html`, `style.css` and `jeopardy.js`. **All the changes will be made to the `jeopardy.js` file.**
 
 ### Step 2
 Using JavaScript and the provided categories object, dynamically populated the game board with category titles, values, clues, and answers following the template found in the HTML.
@@ -65,5 +65,19 @@ Clicking on the 'Show Answer' button should add the class `show` on the answer a
 ## Example
 An example video of Jeopardy can be found on [YouTube](https://youtu.be/z-lO9ET-fmc).
 
+## Rubric
+
+| Task | Points |
+| ---  | :---:  | 
+| Successfully completes Step 2 | 4 |
+| Successfully completes Step 3 | 4 |
+| Successfully completes Step 4 | 2 |
+| **Total** | **10** | 
+
+
 ## Submission
-Once completed, submit the JavaScript file with the name, *jeopardy.js*, to the **Jeopardy** assignment on Brightspace.
+When the assignment is completed, follow the steps below to submit for grading:
+
+1. Create a commit with the message "Completes the Jeopardy assignment"
+2. Push all commits to GitHub.
+3. Submit the URL to your GitHub repository to the **Jeopardy** assignment on BrightSpace.  
